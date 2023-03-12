@@ -9,10 +9,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <Routes>
-        <Home />
 
-      </Routes>
+      <Home />
+
       <Footer />
     </>
   );
