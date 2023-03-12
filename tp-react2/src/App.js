@@ -2,7 +2,8 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
-import Home from './components/home/Home';
+import Home from './pages/Home';
+import { Fragment } from 'react';
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Home />
+        <Route path='/home' element={<Home />} />
 
       </Routes>
       <Footer />
